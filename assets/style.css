@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    background-color: #302ead;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px #302ead(0, 0, 0, 0.12);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+nav img {
+    width: 120px;
+    height: 75px;
+    object-fit: contain;
+    margin-right: auto;
+}
+
+nav > a {
+    color: #faf6f6;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 12px 15px;
+
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    color: rgba(240, 201, 130, 0.933);
+}
+
+
+/* =========================
+   BOTÕES DO MENU
+========================= */
+
+nav button {
+    border: none;
+    background-color: #fffffe;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+nav button a {
+    color: #302ead;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: rgba(240, 201, 130, 0.933);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+.Inicio {
+    width: 100%;
+    padding: 0;
+}
+
+.Inicio img {
+    width: 100%;
+    height: 650px;
+
+    object-fit: cover;
+}
+
+
+/* ÁREA QUEM SOMOS */
+
+section.Quem-somos {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    width: 100%;
+}
+
+
+/* TÍTULO */
+
+.titulo-quem-somos {
+    grid-column: 1 / 4;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.titulo-quem-somos h2 {
+    color: #333399;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+/* IMAGENS */
+
+section.Quem-somos > img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+
+/* QUEM SOMOS */
+
+.texto-quem-somos {
+    background-color: #333399;
+    color: white;
+    padding: 50px 30px;
+    height: 430px;
+}
+
+.texto-quem-somos h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.texto-quem-somos p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* BOTÃO RESERVA */
+
+.Quem-Somos {
+    text-align: center;
+    padding: 30px;
+}
+
+.Quem-Somos button {
+    background-color: #333399;
+    border: none;
+    padding: 12px 35px;
+}
+
+.Quem-Somos button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Quem-Somos p {
+    color: #333399;
+    margin-top: 10px;
+}
+
+
+/* FOTOS */
+
+.Fotos {
+    background-color: #333399;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.Fotos h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.galeria {
+    display: flex;
+    width: 100%;
+}
+
+.galeria img {
+    width: 33.333%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.botao-cardapio {
+    margin-top: 60px;
+    padding: 15px 50px;
+    background-color: white;
+    border: none;
+}
+
+.botao-cardapio a {
+    color: #333399;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTATO */
+
+.Contato {
+    display: flex;
+    width: 100%;
+    padding: 45px 5%;
+    box-sizing: border-box;
+    gap: 10%;
+    background-color: white;
+}
+
+.video {
+    width: 55%;
+}
+
+.video h2 {
+    color: #333399;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 30px 0;
+}
+
+.video img {
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 3px 3px 5px #555;
+}
+
+.informacoes {
+    width: 35%;
+    color: #333399;
+}
+
+.informacoes h3 {
+    color: #333399;
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
+}
+
+.informacoes .whatsapp {
+    display: block;
+    color: #333399;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.informacoes h2 {
+    color: #333399;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.informacoes table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.informacoes td {
+    color: #333399;
+    font-size: 20px;
+    padding: 5px 0;
+    border: none;
+}
+
+.informacoes td:first-child {
+    width: 110px;
+}
+
+.informacoes small {
+    font-size: 11px;
+}
+
+/* BOTÃO DE RESERVA */
+
+.reservas {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.button-reserva {
+    display: inline-block;
+    background-color: #333399;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-weight: bold;
+}
+
+.button-reserva:hover {
+    background-color: #222266;
+}
+
+
+/* INSTAGRAM */
+.inicio-instagram {
+    background-color: #222266;
+}
+
+.instagram {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.instagram h2 {
+    color: #faf6f6;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.instagram a {
+    color: #faf6f6;
+    display: block;
+    text-align: center;
+}
+
+
+/* FOTOS INSTAGRAM */
+
+.fotos-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.fotos-instagram img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* ==============================
+   LOCALIZAÇÃO
+   ============================== */
+
+.localizacao {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Título LOCALIZAÇÃO */
+.localizacao > h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
+
+    color: #30358f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Endereço */
+.localizacao .local {
+    width: 100%;
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+
+.localizacao .local p {
+    margin: 0;
+    padding: 0;
+
+    color: #30358f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* Mapa */
+.localizacao .mapa {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.localizacao .mapa iframe {
+    display: block;
+
+    width: 100% !important;
+    height: 220px !important;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0 !important;
+}
+
+/* Área dos botões */
+.localizacao > div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 44px 0 35px;
+}
+
+/* Botões */
+.localizacao .botao-cardapio,
+.localizacao .botao-reserva {
+    width: 132px;
+    height: 21px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background-color: #30358f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+/* Links dos botões */
+.localizacao .botao-cardapio a,
+.localizacao .botao-reserva a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+.localizacao .botao-cardapio:hover,
+.localizacao .botao-reserva:hover {
+    background-color: #24286f;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #222266;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+footer > img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 250px;
+    height: auto;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.rodape p {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .Inicio img {
+        height: 300px;
+    }
+
+    section.Quem-somos {
+        display: block;
+    }
+
+    section.Quem-somos > img {
+        height: 300px;
+    }
+
+    section.Quem-somos > div:last-child {
+        padding: 40px 25px;
+    }
+
+    .Fotos > img {
+        width: 100%;
+        height: auto;
+    }
+
+}
